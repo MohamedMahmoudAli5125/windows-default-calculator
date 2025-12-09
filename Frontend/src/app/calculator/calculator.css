@@ -1,0 +1,124 @@
+.calculator {
+  width: 360px;
+  background: #1a1a1a;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  margin: 20px auto;
+}
+
+.display {
+  background: #0a0a0a;
+  border-radius: 8px;
+  padding: 24px 20px;
+  text-align: right;
+  color: white;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.display1 {
+  font-size: 1.2rem;
+  color: #aaa;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #444 transparent;
+}
+
+.display1::-webkit-scrollbar {
+  height: 4px;
+}
+
+.display1::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.display1::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 2px;
+}
+
+.display2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: white;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #666 transparent;
+  padding-bottom: 5px;
+}
+
+.display2::-webkit-scrollbar {
+  height: 6px;
+}
+
+.display2::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.display2::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 3px;
+}
+
+.display2::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  height: 70px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.number {
+  background: #333333;
+  color: white;
+}
+
+.number:hover {
+  background: #4a4a4a;
+}
+
+.operator {
+  background: #ff9500;
+  color: white;
+  font-size: 1.5rem;
+}
